@@ -1,0 +1,1 @@
+# yolov12-vehicle-detection-on-cctv-recordings-malang-city

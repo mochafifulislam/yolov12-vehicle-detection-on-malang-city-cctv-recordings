@@ -1,0 +1,10 @@
+*.pt
+*.pth
+*.mp4
+*.avi
+*.mov
+
+__pycache__/
+.ipynb_checkpoints/
+*.sys
+.env

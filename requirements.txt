@@ -1,5 +1,7 @@
-torch>=2.0.0
-opencv-python
+streamlit
+opencv-python-headless
 ultralytics
-pandas
+torch
 numpy
+Pillow
+roboflow

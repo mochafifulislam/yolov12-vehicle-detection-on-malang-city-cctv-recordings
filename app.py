@@ -9,10 +9,18 @@ st.set_page_config(page_title="AI Traffic Monitoring Demo", layout="wide")
 st.title("🚗 Intelligent Traffic Monitoring System (YOLOv12)")
 st.write("Sistem Pemantauan Lalu Lintas Cerdas - Proyek Skripsi S1 Matematika Universitas Brawijaya")
 
-# Load model
+import os
+
 @st.cache_resource
 def load_yolo_model():
-    return YOLO("best.pt")
+    # Mengarahkan path ke folder models/best.pt
+    model_path = os.path.join("model", "best.pt")
+    
+    if os.path.exists(model_path):
+        return YOLO(model_path)
+    else:
+        # Fallback jika file tidak ditemukan
+        return YOLO("yolo12n.pt")
 
 model = load_yolo_model()
 
